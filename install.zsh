@@ -14,7 +14,7 @@ piu i -y zsh neovim gawk subversion
 
 echo "Installing Ellipsis"
 export ELLIPSIS_PATH=$HOME/.local/share/ellipsis
-git clone git@github.com:ellipsis/ellipsis.git $HOME/.local/share/ellipsis
+git clone https://github.com/ellipsis/ellipsis.git $HOME/.local/share/ellipsis
 ln -s $ELLIPSIS_PATH/bin/ellipsis $HOME/.local/bin/
 
 echo "Installing dotfiles"
