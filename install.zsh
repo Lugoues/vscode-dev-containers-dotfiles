@@ -10,7 +10,7 @@ chmod +x ~/.local/bin/piu
 
 echo "Install required packages"
 export DEBIAN_FRONTEND=noninteractive
-piu i -y zsh neovim gawk subversion
+piu i -y zsh neovim gawk subversion unzip
 
 echo "Installing Ellipsis"
 export ELLIPSIS_PATH=$HOME/.local/share/ellipsis
@@ -21,3 +21,5 @@ echo "Installing dotfiles"
 ellipsis install lugoues/zsh
 ellipsis install lugoues/nvim
 
+echo "Pre-Loading zsh"
+zsh -i -c "exit"
