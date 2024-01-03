@@ -17,8 +17,11 @@ export ELLIPSIS_PATH=$HOME/.local/share/ellipsis
 git clone https://github.com/ellipsis/ellipsis.git $HOME/.local/share/ellipsis
 ln -s $ELLIPSIS_PATH/bin/ellipsis $HOME/.local/bin/
 
+echo "Installing private dotfiles"
+ellipsis install ssh://git@github.com/lugoues/dot-gpg || true
+ellipsis install ssh://git@github.com/lugoues/dot-git || true
+
 echo "Installing dotfiles"
-ellipsis install ssh://git@github.com/lugoues/dot-git
 ellipsis install lugoues/zsh
 ellipsis install lugoues/nvim
 
