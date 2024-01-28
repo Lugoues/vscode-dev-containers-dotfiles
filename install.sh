@@ -20,6 +20,7 @@ ln -s $ELLIPSIS_PATH/bin/ellipsis $HOME/.local/bin/
 echo "Installing private dotfiles"
 ellipsis install ssh://git@github.com/lugoues/dot-gpg || true
 ellipsis install ssh://git@github.com/lugoues/dot-git || true
+ellipsis install ssh://git@github.com/lugoues/dot-atuin || true
 
 echo "Installing dotfiles"
 ellipsis install lugoues/zsh
