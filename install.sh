@@ -10,7 +10,7 @@ chmod +x ~/.local/bin/piu
 
 echo "Install required packages"
 export DEBIAN_FRONTEND=noninteractive
-piu i -y zsh gawk subversion unzip exa
+piu i -y zsh gawk subversion unzip exa cmake
 
 echo "Installing Ellipsis"
 export ELLIPSIS_PATH=$HOME/.local/share/ellipsis
